@@ -1,0 +1,38 @@
+package com.jsp.dto;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+
+@Entity
+public class Encouter {
+	
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private int id;
+	private String dateOfAdmin;
+	private String reason;
+	public int getId() {
+		return id;
+	}
+	public void setId(int id) {
+		this.id = id;
+	}
+	public String getDateOfAdmin() {
+		return dateOfAdmin;
+	}
+	public void setDateOfAdmin(String dateOfAdmin) {
+		this.dateOfAdmin = dateOfAdmin;
+	}
+	public String getReason() {
+		return reason;
+	}
+	public void setReason(String reason) {
+		this.reason = reason;
+	}
+	
+	
+	
+
+}
